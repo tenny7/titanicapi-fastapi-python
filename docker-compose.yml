@@ -1,0 +1,9 @@
+version: '3'
+services:
+     titanic_api:
+         build: .
+         container_name: "tennysen/nodetitan"
+         ports:
+           - "8000:15400"
+         volumes:
+           - ./:./
